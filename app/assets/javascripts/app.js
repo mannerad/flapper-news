@@ -1,5 +1,5 @@
-angular.module('flapperNews', ['ui.router', 'templates'])
-.config([
+var app = angular.module('flapperNews', ['ui.router', 'templates']);
+app.config([
 	'$stateProvider',
 	'$urlRouterProvider',
 	function($stateProvider, $urlRouterProvider){

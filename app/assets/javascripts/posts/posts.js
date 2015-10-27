@@ -1,5 +1,4 @@
-angular.module('flapperNews')
-.factory('posts', [
+app.factory('posts', [
 	function(){
 		//service body
 		var O = {
@@ -7,4 +6,4 @@ angular.module('flapperNews')
 		};
 		return O;
 	}
-])
+]);

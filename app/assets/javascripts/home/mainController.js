@@ -1,5 +1,4 @@
-angular.module('flapperNews')
-.controller('MainController', [
+app.controller('MainController', [
 	'$scope', 
 	'posts', 
 	function($scope, posts){
@@ -11,10 +10,7 @@ angular.module('flapperNews')
 				title: $scope.title, 
 				link: $scope.link, 
 				upvotes: 0,
-				comments: [
-					{author: 'Joe', body: 'Cool post!', upvotes: 0},
-				    {author: 'Bob', body: 'Great idea but everything is wrong!', upvotes: 0}
-				]
+				comments: []
 			});
 			$scope.title = '';
 			$scope.link = '';
@@ -23,4 +19,4 @@ angular.module('flapperNews')
 			post.upvotes += 1;
 		};
 	}
-])
+]);
